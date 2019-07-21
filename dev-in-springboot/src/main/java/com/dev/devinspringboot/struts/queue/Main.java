@@ -1,5 +1,7 @@
 package com.dev.devinspringboot.struts.queue;
 
+import com.dev.devinspringboot.struts.link.LinkListedQueue;
+
 import java.util.Random;
 
 public class Main {
@@ -52,5 +54,9 @@ public class Main {
         Queue<Integer> loopQueue = new LoopQueue<>();
         double time1 = testQueue(loopQueue, opCount);
         System.out.println("LoopQueue: " + time1 + "s"); // 0.02
+
+        Queue<Integer> linkListedQueue = new LinkListedQueue<>();
+        double time2 = testQueue(linkListedQueue, opCount);
+        System.out.println("linkListedQueue: " + time2 + "s"); // 0.02
     }
 }
