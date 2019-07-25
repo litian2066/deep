@@ -41,20 +41,8 @@ public class Main {
 
 
     public static void main(String[] args) {
-        /*LoopQueue<Integer> loopQueue = new LoopQueue<>();
-
-        for (int i = 0; i < 9; i++) {
-            loopQueue.enqueue(i);
-            System.out.println(loopQueue);
-            if (i % 3 == 2) {
-                System.out.println("出队");
-                loopQueue.dequeue();
-                System.out.println(loopQueue);
-            }
-        }*/
-        // 测试数组队列和循环队列的效率
+        // 测试数组栈和链表栈的效率
         int opCount = 100000;
-
         Stack<Integer> arrayQueue = new ArrayStack<>();
         double time = testStack(arrayQueue, opCount);
         System.out.println("ArrayStack: " + time + "s"); // 5 s

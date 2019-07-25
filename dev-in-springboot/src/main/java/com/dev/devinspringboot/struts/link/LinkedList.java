@@ -1,9 +1,6 @@
 package com.dev.devinspringboot.struts.link;
 
 public class LinkedList<E> {
-
-
-
     /**
      * 内部类
      */

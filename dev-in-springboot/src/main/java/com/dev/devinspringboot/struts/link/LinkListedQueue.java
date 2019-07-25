@@ -4,7 +4,6 @@ import com.dev.devinspringboot.struts.queue.Queue;
 
 public class LinkListedQueue<E> implements Queue<E> {
 
-
     private class Node {
         public E e;
         public Node next;
@@ -46,6 +45,7 @@ public class LinkListedQueue<E> implements Queue<E> {
     // 入队
     @Override
     public void enqueue(E e) {
+        // 如果队尾为空
         if (tail == null) {
             tail = new Node(e);
             head = tail;

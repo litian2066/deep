@@ -11,8 +11,4 @@ public class ListNode {
     public ListNode(int val) {
         this.val = val;
     }
-
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-    }
 }
