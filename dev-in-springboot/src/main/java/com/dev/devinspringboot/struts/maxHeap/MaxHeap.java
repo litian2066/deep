@@ -6,7 +6,8 @@ import com.dev.devinspringboot.struts.array.Array;
  * 堆的数组表示
  * 泛型必须可以比较
  */
-public class MaxHeap<E extends Comparable<E>> {
+public class
+MaxHeap<E extends Comparable<E>> {
 
     private Array<E> data;
 
