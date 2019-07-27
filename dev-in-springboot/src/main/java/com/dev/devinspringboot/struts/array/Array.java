@@ -160,4 +160,14 @@ public class Array<E> {
     public int getCapacity() {
         return data.length;
     }
+
+    // 交换
+    public void swap(int i, int j) {
+        if (i < 0 || i >= size || j < 0 || j >= size) {
+            throw new IllegalArgumentException("不能交换，交换双方索引异常");
+        }
+        E t = data[i];
+        data[i] = data[j];
+        data[j] = t;
+    }
 }
